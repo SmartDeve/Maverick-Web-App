@@ -1,0 +1,1 @@
+var number=window.sessionStorage.getItem("number");null===number&&window.location.replace("login.html");

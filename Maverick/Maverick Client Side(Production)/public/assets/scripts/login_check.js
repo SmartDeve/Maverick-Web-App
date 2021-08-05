@@ -1,0 +1,1 @@
+var number=window.sessionStorage.getItem("number"),is_unauthorized=window.sessionStorage.getItem("UNAUTHORIZED_USER");null!==number&&"true"===is_unauthorized?alert("PLEASE ENTER REGISTERED NUMBER"):null!==number&&window.location.replace("index.html");
