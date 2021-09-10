@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Garet Extra';
+    src: url('GaretExtraBold.eot');
+    src: url('GaretExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('GaretExtraBold.woff2') format('woff2'),
+        url('GaretExtraBold.woff') format('woff'),
+        url('GaretExtraBold.ttf') format('truetype'),
+        url('GaretExtraBold.svg#GaretExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

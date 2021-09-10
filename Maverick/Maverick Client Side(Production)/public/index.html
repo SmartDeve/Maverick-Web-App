@@ -11,8 +11,13 @@
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
 
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+
     <link rel="stylesheet" href="assets/custom_css/ChunkFive_Fonts/stylesheet.css">
+    <link rel="stylesheet" href="assets/custom_css/Monsterrat/stylesheet.css">
+    <link rel="stylesheet" href="assets/custom_css/Open Sans/stylesheet.css">
     <link rel="stylesheet" href="assets/custom_css/Noto_Serif_Fonts/stylesheet.css">
+    <link rel="stylesheet" href="assets/custom_css/Candal/stylesheet.css">
+    
     <link rel="stylesheet" href="assets/custom_css/PT_Serif_Fonts/stylesheet.css">
     <link rel="stylesheet" href="assets/custom_css/Playfair_fonts/stylesheet.css">
     <link rel=icon href="assets/img/icon.png"> 
@@ -39,7 +44,7 @@ td{
     
     <div id="wrapper" >
        
-        <div class="d-flex flex-column" id="content-wrapper" style="background-color:#1b1b28
+        <div class="d-flex flex-column" id="content-wrapper" style="background-color:#12172e
         ">
         
             <div id="content">
@@ -47,8 +52,8 @@ td{
         
         
         
-                <nav class="navbar navbar-light navbar-expand bg-black shadow mb-4 topbar static-top" style="background-color: #c9daff">
-                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                <nav class="navbar navbar-expand topbar static-top" style="background-color: #92cbff">
+                    <div class="container-fluid">
                       <b>  <span id = "currentAmount" style="background-color: white;padding-top: 3%;padding-bottom: 3%; border-radius: 5px;"></span></b>
                         <ul class="navbar-nav flex-nowrap ms-auto">
                         
@@ -76,18 +81,23 @@ td{
 
         
                 <div class="container">
-                    <h1 style="text-align: center; color: #ffffff; font-family:ChunkFive;font-size: 350%; color: #d7dcf7
+                    <h1 style="text-align: center; color: #ffffff; font-family: Candal;font-size: 400%; color: #92bcff
                     ;">MAVERICK DASHBOARD</h1>
                 </div>
                 <br>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="card" style="background-color: #6077d4; border-color:#b3e5fc;">
+                            <div class="card" style="background-color: #5679ed
+
+
+
+                            ; border-color:#639cff
+;">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col"><span style="color: #1b1b28;font-size: 20px; font-family:PT Serif; font-weight: bold;color: #1b1b28; ">NUMBER OF STOCKS</span></div>
-                                        <div class="col" style="text-align: right;"><input step = "1" type="number" id="buy_numbers" min ="1" max="25" onkeypress="return event.charCode >= 48 && event.charCode <= 57"></div>
+                                        <div class="col"><span style="color: #92bcff;font-size: 20px; font-family:PT Serif; font-weight: bold;color: #10244f; ">NUMBER OF STOCKS</span></div>
+                                        <div class="col" style="text-align: right;"><input step = "1" type="number" id="buy_numbers" min ="1" max="25"  onkeypress="return event.charCode >= 48 && event.charCode <= 57"></div>
                                     </div>
                                     <br>
                                     <div class="row">
@@ -102,10 +112,12 @@ td{
                             </div>
                         </div>
                         <div class="col-md-6" >
-                            <div class="card"  style="background-color: #6077d4;border-color: #b3e5fc;" >
+                            <div class="card"  style="background-color: #5679ed
+
+                            ;border-color: #639cff                        ;" >
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col" ><span style="color: #1b1b28;font-size: 20px; font-family: PT Serif;font-weight: bold;color: #1b1b28;">NUMBER OF STOCKS</span></div>
+                                        <div class="col" ><span style="color: #1b1b28;font-size: 20px; font-family: PT Serif;font-weight: bold;color: #10244f;">NUMBER OF STOCKS</span></div>
                                         <div class="col" style="text-align: right;"><input type="number" step = "1" min = "1" max ="25" style="text-align: left;" id="sell_numbers"   onkeypress="return event.charCode >= 48 && event.charCode <= 57"></div>
                                     </div>
                                     <br>
@@ -152,15 +164,18 @@ td{
             <br>
             <br>
                 <div class="container" >
-                    <div class="card" style="background-color: #424250; border: #6077d4;">
-                        <div class="card-header" style="background-color: #7c829e
-
-                        ;">
-                            <h3 class="mb-0" style="text-align: center; color: #1b1b28;font-family: PT Serif; font-weight: bold;" >STOCK MARKET</h3>
+                    <div class="card" style="background-color: #1b1a51; border: #6077d4;">
+                        <div class="card-header" style="background-color: #92bcff 
+                        ; border: #5679ed;">
+                            <h3 class="mb-0" style="text-align: center; color: #10244f
+                            ;font-family:PT Serif;font-size:xx-large;font-weight: bold;" >STOCK MARKET</h3>
                         </div>
                         <div class="card-body"  >
                             <div class="table-responsive" id='stockTable' hidden>
-                                <table class="table" style="color: white;border: #6077d4;">
+                                <table class="table" style="color: white;border: #5679ed
+
+
+                                ;">
                                     <thead >
                                         <tr >
                                             <th style="font-size: large;font-family: PT Serif;">COMPANY</th>
@@ -200,7 +215,7 @@ td{
                     </div>
                 </div>
             
-            <footer class="sticky-footer" style="background-color: #6077d4;color: #1b1b28;font-weight: bold;">
+            <footer class="sticky-footer" style="background-color: #5679ed;color: #10244f;font-weight: bold;">
                 <div class="container my-auto">
                     <div class="text-center my-auto copyright"><span>By Team Maverick (2021 - 2022)</span></div>
                 </div>

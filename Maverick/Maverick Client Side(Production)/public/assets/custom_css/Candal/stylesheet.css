@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Candal';
+    src: url('Candal.eot');
+    src: url('Candal.eot?#iefix') format('embedded-opentype'),
+        url('Candal.woff2') format('woff2'),
+        url('Candal.woff') format('woff'),
+        url('Candal.ttf') format('truetype'),
+        url('Candal.svg#Candal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

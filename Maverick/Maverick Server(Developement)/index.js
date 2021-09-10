@@ -12,7 +12,7 @@ app.use(cors());
 const http = require('http').createServer(app);
 var socket = require('socket.io')(http,{
     cors: {
-      origin: ["https://maverick-ae0b5.web.app/Market.html","https://maverick-ae0b5.web.app","https://maverick-ae0b5.web.app/index.html","https://maverick-admin-2k21.web.app/index.html","https://maverick-admin-2k21.web.app"],
+      origin: ["https://maverick-ae0b5.web.app/Market.html","https://maverick-ae0b5.web.app","https://maverick-ae0b5.web.app/index.html","https://maverick-admin-2k21.web.app/index.html","https://maverick-admin-2k21.web.app","https://awsome-3c64e.web.app/index.html","https://awsome-3c64e.web.app"],
       methods: ["GET", "POST"]
     }
   });
@@ -23,8 +23,8 @@ var companyNamesfromBase;
 const defaultDatabase = admin.database();
 
 socket.on('connection',(soc)=>{
-
-    properLog('SocketConnection','User Connected');
+    let ph = soc.handshake.query.number;
+    properLog('USER','User logged in with '+ph);
 
 
     soc.on('transaction_request',handleTransaction);
@@ -87,6 +87,7 @@ function addParticipantRequest(data)
     let currentUserStocks ="";
     let currentUserAccounts ="";
     let currentUserProfits="";
+ 
     properLog('ADMIN','Team '+school +' is added with '+ phoneNumber);
     
     for(let i = 0;i<companyNamesfromBase.length-1;i++)
@@ -104,7 +105,8 @@ function addParticipantRequest(data)
             "currentStocks":currentUserStocks,
             "currentAccounts":currentUserAccounts,
             "currentProfits":currentUserProfits,
-            "SCHOOL":school
+            "SCHOOL":school,
+            "PROFIT":0
 
         }
      
